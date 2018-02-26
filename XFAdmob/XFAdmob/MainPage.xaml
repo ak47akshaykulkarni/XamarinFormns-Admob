@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XFAdmob"
+             xmlns:controls="clr-namespace:XFAdmob.Controls;assembly=XFAdmob"
              x:Class="XFAdmob.MainPage">
-
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Button Text="Hi I am Interstitial, Fire me" Clicked="InterstitialFire"  BackgroundColor="GhostWhite" TextColor="DarkBlue" VerticalOptions="CenterAndExpand"/>
+        <controls:BannerAdView VerticalOptions="EndAndExpand" BackgroundColor="Aqua"/>
+    </StackLayout>
 </ContentPage>
