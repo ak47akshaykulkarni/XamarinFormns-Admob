@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Gms.Ads;
 
 namespace XFAdmob.Droid
 {
@@ -21,6 +22,7 @@ namespace XFAdmob.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
+            MobileAds.Initialize(ApplicationContext, Constants.AndroidAppId);
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Google.MobileAds;
 using UIKit;
 
 namespace XFAdmob.iOS
@@ -24,6 +25,8 @@ namespace XFAdmob.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
+
+            MobileAds.Configure(Constants.iOSAppId);
 
             return base.FinishedLaunching(app, options);
         }
